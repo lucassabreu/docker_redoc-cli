@@ -9,7 +9,8 @@ Docker Container for [redoc-cli](https://www.npmjs.com/package/redoc-cli)
 ## Usage
 
 ```sh
-docker run --rm -i -v $PWD:/docs lucassabreu/redoc-cli build openapi.yaml -o output.html \
+docker run --rm -i -v $PWD:/docs lucassabreu/redoc-cli build openapi.yaml \
+  -o output.html \
   --options.expandResponses=200,201
 ```
 
