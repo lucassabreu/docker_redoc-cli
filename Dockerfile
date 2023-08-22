@@ -1,7 +1,7 @@
 # Pull base image
 FROM node:lts-slim
 
-ENV REDOC_CLI_VERSION=latest
+ENV REDOC_CLI_VERSION=1.0.0-beta.99
 
 # Install @redocly/cli
 RUN npm install -g @redocly/cli@$REDOC_CLI_VERSION
