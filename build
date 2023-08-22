@@ -2,7 +2,7 @@
 set -e
 
 function gather_tags {
-  npm view redoc-cli versions --json | jq '.[]' --raw-output
+  npm view '@redocly/cli' versions --json | jq '.[]' --raw-output
 }
 
 function delete_ignored_tags {

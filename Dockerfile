@@ -1,10 +1,10 @@
 # Pull base image
-FROM node:18
+FROM node:lts-slim
 
 ENV REDOC_CLI_VERSION=latest
 
-# Install redoc-cli
-RUN npm install -g redoc-cli@$REDOC_CLI_VERSION
+# Install @redocly/cli
+RUN npm install -g @redocly/cli@$REDOC_CLI_VERSION
 
 WORKDIR /docs
-ENTRYPOINT ["redoc-cli"]
+ENTRYPOINT ["npx", "@redocly/cli"]

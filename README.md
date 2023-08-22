@@ -4,15 +4,15 @@
 
 # docker_redoc-cli
 
-Docker Container for [redoc-cli](https://www.npmjs.com/package/redoc-cli)
+Docker Container for [@redocly/cli](https://www.npmjs.com/package/@redocly/cli)
 
 ## Usage
 
 ```sh
-docker run --rm -i -v $PWD:/docs lucassabreu/redoc-cli build openapi.yaml \
+docker run --rm -i -v $PWD:/docs lucassabreu/redoc-cli build-docs openapi.yaml \
   -o output.html \
-  --options.expandResponses=200,201
+  --templateOptions.expandResponses=200,201
 ```
 
-See [redocRedocly/redoc](https://github.com/Redocly/redoc/tree/master/cli#usage) for more usage examples.
+See [Redocly/redocly-cli](https://github.com/Redocly/redocly-cli#usage) for more usage examples.
 
